@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>My heart website</title>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 90vh; 
+        }
+        .container {
+            background-color: rgb(193, 224, 247);
+            padding: 1rem;
+            border-radius: 15px;
+            width: 350px;
+        }
+        .text{
+          
+            color: rgb(10, 10, 10);
+        }
+        .btn{
+            padding: 0.5rem 2rem;
+            border: none;
+            outline: none;
+            font-weight: bold;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        .btnPrimary{
+            color: rgb(250, 252, 253);
+            background-color: rgb(123, 26, 108);
+        }
+        .btnSecondary{
+            padding: 0.5rem 1rem;
+            background: white;
+        }
+        .moving:hover{
+            margin-left: 90px;
+        }
+
+    </style>
+</head>
+<body>
+    <section class="container">
+        <h2 class="text">Do you love me? ah boy! </h2>
+        <button class="btn btnPrimary">Yes</button>
+        <button class="btn btnSecondary moving">No</button>
+    </section>
+    <script>
+        const btnAgree = document.querySelector(".btnPrimary");
+        const btnDisagree = document.querySelector(".btnSecondary");
+        const text = document.querySelector(".text");
+        btnAgree.addEventListener("click",()=>{
+            text.innerText = "Let! Get married tomorrow babe."
+        });
+        btnDisagree.addEventListener("mouseover", ()=>{
+
+        });
+    </script>
+    
+</body>
+</html>
